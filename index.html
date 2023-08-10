@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="./assets/logo.png" alt="converter-money" />
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select class="currency-selector">
+                    <option value="real">R$ Real</option>
+                </select>
+            </label>
+
+            <label>
+                <b>Para</b>
+                <select class="currency-select">
+                    <option value="bitcoin">₿ Bitcoin</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="dolar">US$ Dólar</option>
+                </select>
+            </label>
+
+            <label>
+                <b>Valor</b>
+                <input class="input-currency" placeholder="Insira o valor a ser convertido...">
+            </label>
+
+            <button class="convert-button">Converter</button>
+
+            <section>
+                <div class="currency-box">
+                    <img src="./assets/real.png" alt="logo-moeda-a-converter">
+                    <p class="currency">Real</p>
+                    <p class="currency-value-to-convert">R$ 0,00</p>
+                </div>
+
+                <img class="arrow-img" src="./assets/arrow.png" alt="Seta">
+                
+                <div class="currency-box">
+                    <img class="currency-img" src="./assets/bitcoin.png" alt="logo-moeda-convertida">
+                    <p class="currency" id="currency-name">Bitcoin</p>
+                    <p class="currency-value">₿ 0,00</p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
